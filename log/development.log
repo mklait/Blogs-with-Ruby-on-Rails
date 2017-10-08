@@ -1,0 +1,684 @@
+Started GET "/" for 127.0.0.1 at 2017-10-07 18:20:42 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 849ms (Views: 80.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-07 18:20:50 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 129ms (Views: 54.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-07 18:37:46 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (7.5ms)
+Completed 200 OK in 728ms (Views: 96.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-07 18:37:57 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 80ms (Views: 43.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-07 18:38:04 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 2932ms
+
+
+  
+ActionView::Template::Error (TypeError: Object doesn't support this property or method):
+    4:     <title>Blog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___611903427_46936824'
+Started GET "/" for 127.0.0.1 at 2017-10-07 18:42:36 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 3251ms
+
+
+  
+ActionView::Template::Error (TypeError: Object doesn't support this property or method):
+     5:     <%= csrf_meta_tags %> 
+     6: 
+     7:     =begin 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     =end
+    11:   </head>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__957416707_45752640'
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-07 18:42:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 713ms
+
+
+  
+ActionView::Template::Error (TypeError: Object doesn't support this property or method):
+     5:     <%= csrf_meta_tags %> 
+     6: 
+     7:     =begin 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     =end
+    11:   </head>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__957416707_54758268'
+Started GET "/" for 127.0.0.1 at 2017-10-07 18:43:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 222ms (Views: 149.7ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 18:58:38 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 643ms (Views: 124.8ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 19:09:55 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (356.5ms)
+Completed 500 Internal Server Error in 1101ms
+
+
+  
+ActionView::Template::Error (undefined method `lable' for #<ActionView::Helpers::FormBuilder:0x5838d68>
+Did you mean?  label):
+    2: 
+    3: <%= form_with scope: :article, local: true do |form| %>
+    4: 	<p>
+    5: 			<%= form.lable :title %> <br>
+    6: 			<%= form.text_field :title %>
+    7: 	</p>
+    8: 
+  
+app/views/articles/new.html.erb:5:in `block in _app_views_articles_new_html_erb___368710588_30828252'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___368710588_30828252'
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 19:10:25 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (570.8ms)
+Completed 500 Internal Server Error in 809ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `fomr' for #<#<Class:0x57c7ea8>:0x580fcf8>
+Did you mean?  form):
+     7: 	</p>
+     8: 
+     9: 	<p> <%= form.label :text %> <br>
+    10: 			<%= fomr.text_area :text %>
+    11: 	</p>
+    12: 
+    13: 	<p>
+  
+app/views/articles/new.html.erb:10:in `block in _app_views_articles_new_html_erb___368710588_46187508'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___368710588_46187508'
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 19:10:55 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 180ms (Views: 121.6ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 19:11:50 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 212ms (Views: 138.5ms)
+
+
+Started POST "/articles/new" for 127.0.0.1 at 2017-10-07 19:15:46 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/articles/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 19:21:54 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 140ms (Views: 100.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 19:21:57 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6O2CMkyT2qrUgeet/VI+hGZpzZ9PnTxLqUKuwngOrXk4iFkjTuAgedcXJFKoiStohGYx2fXx7sJOeLe2cqyA4g==", "article"=>{"title"=>"", "text"=>""}, "commit"=>"Save Article"}
+Completed 500 Internal Server Error in 40ms
+
+
+  
+ActionView::MissingTemplate (Missing template articles/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "c:/Users/Mariam/Documents/blog/app/views"
+):
+  
+app/controllers/articles_controller.rb:8:in `create'
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (116.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (120.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateArticles (20171007233739)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" text, "author" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171007233739"]]
+  [1m[35m (99.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-07 23:41:36.966716"], ["updated_at", "2017-10-07 23:41:36.966716"]]
+  [1m[35m (136.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 19:50:21 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ArticlesController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 19:51:03 -0400
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ArticlesController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 20:15:01 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (34.5ms)
+Completed 500 Internal Server Error in 212ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <p>
+    2:   <strong>Title:</strong>
+    3:   <%= @article.title %> 
+    4: </p>
+    5:  
+    6: <p>
+  
+app/views/articles/show.html.erb:3:in `_app_views_articles_show_html_erb__539593623_44483304'
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 20:15:19 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 111ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 20:16:00 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 93ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:16:17 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ibKJT4u5nr9fbTyypNPurxJ5bwjPdiqVEeP5y/H7k9ZZ11JeicpkbFz7/03xCPtD8HaTTnUa+Bz22eC/+1m+TQ==", "article"=>{"title"=>"Rails is awesome", "text"=>"it really is"}, "commit"=>"Save Article"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 500 Internal Server Error in 20ms (Views: 4.0ms | ActiveRecord: 0.5ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/articles_controller.rb:9:in `create'
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:17:18 -0400
+  
+SyntaxError (c:/Users/Mariam/Documents/blog/app/controllers/articles_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/articles_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:17:50 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ibKJT4u5nr9fbTyypNPurxJ5bwjPdiqVEeP5y/H7k9ZZ11JeicpkbFz7/03xCPtD8HaTTnUa+Bz22eC/+1m+TQ==", "article"=>{"title"=>"Rails is awesome", "text"=>"it really is"}, "commit"=>"Save Article"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 3.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/articles_controller.rb:8:in `create'
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:19:15 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ibKJT4u5nr9fbTyypNPurxJ5bwjPdiqVEeP5y/H7k9ZZ11JeicpkbFz7/03xCPtD8HaTTnUa+Bz22eC/+1m+TQ==", "article"=>{"title"=>"Rails is awesome", "text"=>"it really is"}, "commit"=>"Save Article"}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rails is awesome"], ["text", "it really is"], ["created_at", "2017-10-08 00:19:15.545413"], ["updated_at", "2017-10-08 00:19:15.545413"]]
+  [1m[35m (103.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 339ms (ActiveRecord: 107.8ms)
+
+
+  
+NoMethodError (undefined method `article_url' for #<ArticlesController:0x5690400>
+Did you mean?  articles_url):
+  
+app/controllers/articles_controller.rb:11:in `create'
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:20:34 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ibKJT4u5nr9fbTyypNPurxJ5bwjPdiqVEeP5y/H7k9ZZ11JeicpkbFz7/03xCPtD8HaTTnUa+Bz22eC/+1m+TQ==", "article"=>{"title"=>"Rails is awesome", "text"=>"it really is"}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rails is awesome"], ["text", "it really is"], ["created_at", "2017-10-08 00:20:34.804141"], ["updated_at", "2017-10-08 00:20:34.804141"]]
+  [1m[35m (143.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 399ms (ActiveRecord: 148.2ms)
+
+
+  
+NameError (undefined local variable or method `article_url' for #<ArticlesController:0x5183fd0>
+Did you mean?  articles_url):
+  
+app/controllers/articles_controller.rb:11:in `create'
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 20:20:50 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 88ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:21:11 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nop1sSJHc6A+AQALydIfn2at1p7D4Dzjq62Bqa3r44xO766gIDSJcz2Xw/ScCQpzhKIq2HmM7mpMl5jdp0nOFw==", "article"=>{"title"=>"Rails i\\", "text"=>"it really is"}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rails i\\"], ["text", "it really is"], ["created_at", "2017-10-08 00:21:12.052712"], ["updated_at", "2017-10-08 00:21:12.052712"]]
+  [1m[35m (103.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 299ms (ActiveRecord: 105.3ms)
+
+
+  
+NameError (undefined local variable or method `article_url' for #<ArticlesController:0x9a3dc58>
+Did you mean?  articles_url):
+  
+app/controllers/articles_controller.rb:11:in `create'
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 20:21:43 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 103ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 20:22:24 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 104ms (Views: 67.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:22:34 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KZtrtktZRBKRM3O9XUeMJ2AGBHutAZLOl+yZhnSI1yf5/rCnSSq+wZKlsEIInJnLggn4PRdtQEdw1oDyfir6vA==", "article"=>{"title"=>"hello", "text"=>"this is it"}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (22.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hello"], ["text", "this is it"], ["created_at", "2017-10-08 00:22:34.518700"], ["updated_at", "2017-10-08 00:22:34.518700"]]
+  [1m[35m (125.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 384ms (ActiveRecord: 148.4ms)
+
+
+  
+NoMethodError (undefined method `article_url' for #<ArticlesController:0x5b2a638>
+Did you mean?  articles_url):
+  
+app/controllers/articles_controller.rb:11:in `create'
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 20:23:52 -0400
+Processing by ArticlesController#show as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 17ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/articles_controller.rb:15:in `show'
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 20:23:57 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 86ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:23:59 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6lCexInPsWmWOXzyDoErmBvSNoOjGHyJVRA0dhVNsOA6NUXVi7xLupWvvw1bWj50+d3KxRl0rgCyKi0CH++dew==", "article"=>{"title"=>"", "text"=>""}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (76.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["text", ""], ["created_at", "2017-10-08 00:23:59.822567"], ["updated_at", "2017-10-08 00:23:59.822567"]]
+  [1m[35m (108.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 354ms (ActiveRecord: 184.7ms)
+
+
+  
+NoMethodError (undefined method `article_url' for #<ArticlesController:0xafb1188>
+Did you mean?  articles_url):
+  
+app/controllers/articles_controller.rb:11:in `create'
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 20:29:27 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 110ms (Views: 83.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:29:33 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TuFdrqO3mU64MT4ofYMRCmD7O2MMH4nTmd3cXxvesJeehIa/ocRjnbun/dcoWATmgvTHJbZzW1p+58UrEXydDA==", "article"=>{"title"=>"hello", "text"=>"fdh"}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.9ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hello"], ["text", "fdh"], ["created_at", "2017-10-08 00:29:33.568046"], ["updated_at", "2017-10-08 00:29:33.568046"]]
+  [1m[35m (115.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 151ms (ActiveRecord: 123.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 20:29:33 -0400
+Processing by ArticlesController#show as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/articles_controller.rb:15:in `show'
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:30:26 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TuFdrqO3mU64MT4ofYMRCmD7O2MMH4nTmd3cXxvesJeehIa/ocRjnbun/dcoWATmgvTHJbZzW1p+58UrEXydDA==", "article"=>{"title"=>"hello", "text"=>"fdh"}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (41.1ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hello"], ["text", "fdh"], ["created_at", "2017-10-08 00:30:26.444617"], ["updated_at", "2017-10-08 00:30:26.444617"]]
+  [1m[35m (186.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 257ms (ActiveRecord: 229.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 20:30:26 -0400
+Processing by ArticlesController#show as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/articles_controller.rb:15:in `show'
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:30:54 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TuFdrqO3mU64MT4ofYMRCmD7O2MMH4nTmd3cXxvesJeehIa/ocRjnbun/dcoWATmgvTHJbZzW1p+58UrEXydDA==", "article"=>{"title"=>"hello", "text"=>"fdh"}, "commit"=>"Save Article"}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hello"], ["text", "fdh"], ["created_at", "2017-10-08 00:30:54.325319"], ["updated_at", "2017-10-08 00:30:54.325319"]]
+  [1m[35m (114.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 147ms (ActiveRecord: 118.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 20:30:54 -0400
+Processing by ArticlesController#show as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/articles_controller.rb:15:in `show'
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:32:31 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (c:/Users/Mariam/Documents/blog/app/controllers/articles_controller.rb:15: syntax error, unexpected '.', expecting ']'
+	@article = Article.find(params[.:format])
+	                                ^
+c:/Users/Mariam/Documents/blog/app/controllers/articles_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/articles_controller.rb:15: syntax error, unexpected '.', expecting ']'
+app/controllers/articles_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:33:35 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TuFdrqO3mU64MT4ofYMRCmD7O2MMH4nTmd3cXxvesJeehIa/ocRjnbun/dcoWATmgvTHJbZzW1p+58UrEXydDA==", "article"=>{"title"=>"hello", "text"=>"fdh"}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (7.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hello"], ["text", "fdh"], ["created_at", "2017-10-08 00:33:35.476726"], ["updated_at", "2017-10-08 00:33:35.476726"]]
+  [1m[35m (115.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 147ms (ActiveRecord: 123.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 20:33:48 -0400
+Processing by ArticlesController#show as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/articles_controller.rb:15:in `show'
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:34:42 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TuFdrqO3mU64MT4ofYMRCmD7O2MMH4nTmd3cXxvesJeehIa/ocRjnbun/dcoWATmgvTHJbZzW1p+58UrEXydDA==", "article"=>{"title"=>"hello", "text"=>"fdh"}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hello"], ["text", "fdh"], ["created_at", "2017-10-08 00:34:42.652154"], ["updated_at", "2017-10-08 00:34:42.652154"]]
+  [1m[35m (105.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 134ms (ActiveRecord: 107.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 20:34:42 -0400
+Processing by ArticlesController#show as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/articles_controller.rb:15:in `show'
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 20:45:11 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 25ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/articles_controller.rb:15:in `show'
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-07 20:45:27 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 116ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:45:41 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B+LMw9UjQzjl6o7gmb+mqb6C2DtbZl+rBZyYHN8Rw1/XhxfS11C56+Z8TR/MZLNFXI0kfeEKjSLipoFo1bPuxA==", "article"=>{"title"=>"", "text"=>""}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["text", ""], ["created_at", "2017-10-08 00:45:41.236025"], ["updated_at", "2017-10-08 00:45:41.236025"]]
+  [1m[35m (132.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 161ms (ActiveRecord: 136.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 20:45:41 -0400
+Processing by ArticlesController#show as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/articles_controller.rb:15:in `show'
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:53:02 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B+LMw9UjQzjl6o7gmb+mqb6C2DtbZl+rBZyYHN8Rw1/XhxfS11C56+Z8TR/MZLNFXI0kfeEKjSLipoFo1bPuxA==", "article"=>{"title"=>"My articles", "text"=>"here they are"}, "commit"=>"Save Article"}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (22.9ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My articles"], ["text", "here they are"], ["created_at", "2017-10-08 00:53:02.947144"], ["updated_at", "2017-10-08 00:53:02.947144"]]
+  [1m[35m (127.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 163ms (ActiveRecord: 151.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 20:53:03 -0400
+Processing by ArticlesController#show as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/articles_controller.rb:15:in `show'
+Started POST "/articles" for 127.0.0.1 at 2017-10-07 20:53:21 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B+LMw9UjQzjl6o7gmb+mqb6C2DtbZl+rBZyYHN8Rw1/XhxfS11C56+Z8TR/MZLNFXI0kfeEKjSLipoFo1bPuxA==", "article"=>{"title"=>"My articles", "text"=>"here they are"}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My articles"], ["text", "here they are"], ["created_at", "2017-10-08 00:53:31.991918"], ["updated_at", "2017-10-08 00:53:31.991918"]]
+  [1m[35m (105.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 133ms (ActiveRecord: 109.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-07 20:53:32 -0400
+Processing by ArticlesController#show as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/articles_controller.rb:15:in `show'
